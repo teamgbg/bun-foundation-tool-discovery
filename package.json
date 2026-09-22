@@ -1,0 +1,56 @@
+{
+  "_generated": {
+    "system": "package-json@1.0.0",
+    "status": "generated",
+    "edit": "edit src/ — dependencies and exports derive from imports; everything else preserved"
+  },
+  "name": "@teamscala/tool-discovery",
+  "capability": "Tool discovery surface: scans mcp_tool / tool_definition rows and produces the callable registry every tool-executor consumes.",
+  "tier": "foundation",
+  "type": "module",
+  "version": "0.0.2",
+  "description": "Tool discovery surface: scans mcp_tool / tool_definition rows and produces the callable registry every tool-executor consumes.",
+  "imports": {
+    "#tool-discovery/*": "./src/*",
+    "#tool-discovery/*.ts": "./src/*.ts"
+  },
+  "files": [
+    "src"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "bun-types": "*",
+    "@happy-dom/global-registrator": "*",
+    "@testing-library/react": "*"
+  },
+  "exports": {
+    "./catalog": {
+      "types": "./src/catalog.d.ts",
+      "default": "./src/catalog.ts"
+    },
+    "./catalog.ts": {
+      "types": "./src/catalog.d.ts",
+      "default": "./src/catalog.ts"
+    },
+    "./match-by-intent": {
+      "types": "./src/match-by-intent.d.ts",
+      "default": "./src/match-by-intent.ts"
+    },
+    "./match-by-intent.ts": {
+      "types": "./src/match-by-intent.d.ts",
+      "default": "./src/match-by-intent.ts"
+    },
+    "./search-tool-catalog": {
+      "types": "./src/search-tool-catalog.d.ts",
+      "default": "./src/search-tool-catalog.ts"
+    },
+    "./search-tool-catalog.ts": {
+      "types": "./src/search-tool-catalog.d.ts",
+      "default": "./src/search-tool-catalog.ts"
+    }
+  },
+  "repository": "https://github.com/teamgbg/bun-foundation-tool-discovery",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  }
+}
